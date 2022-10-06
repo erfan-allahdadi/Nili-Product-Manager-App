@@ -1,7 +1,7 @@
 
 export const addSizeFeature = (formData) => {
     return {
-        type : "ADD_FEATURE_SIZE",
+        type : "ADD_FEATURE_SIZE", 
         payload : formData
     }
 }

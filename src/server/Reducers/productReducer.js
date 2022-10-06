@@ -1,6 +1,6 @@
 const initState = {
     products : [],
-
+ 
     isCreateProductLoading : false,
     isReadProductLoading : false,
     isDeleteProductLoading : false,
@@ -20,7 +20,7 @@ export const productReducer = (state = initState , action) => {
         case "GET_PRODUCT_LOADING" : 
             return {...state}
         case "GET_PRODUCT_DONE" : 
-            return {...state}
+            return {...state , products : action.payload }
         case "GET_PRODUCT_FAILED" :
             return {...state}
 
